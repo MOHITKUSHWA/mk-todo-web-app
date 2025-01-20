@@ -3,49 +3,57 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Exo 2", serif;
+
 }
 /* font stayling code */
-.jersey-15-regular {
-    font-family: "Jersey 15", serif;
-    font-weight: 400;
-    font-style: normal;
+
+::-webkit-scrollbar {
+    color: #c4d9ff;
 }
-
-
+/* body stayling code */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
 /* header stayling code*/
 header{
     display: flex;
+    justify-content: space-between;
     width: 100%;
-    height: 100px;
+    height: 10dvh;
     align-items: center;
     background-color: #2a7cb3cb;
+    text-transform: capitalize;
 }
 /* logo stayl code  */
 .logo{
-    width: 60dvh;
-    text-transform:uppercase;   
+    width: 60dvh;   
     display: inline-flex;
     align-items: center;    
 }
 .logo img{
-    margin-left: 50px;
-    height: 70px;
-    width: 70px;
+    margin-left: 30px;
+    height: 10dvh;
+    width: 10dvh;
 }
 .logo h1{
-    height: 50px;
+    margin-left: 10px;
     color: white;
+    font-family: "Exo 2", serif;
 }
 
 header .serchdiv{
-    width: 90%;
-    height: 60%;
-    border-radius: 30px;
+    width: 60%;
+    height: 80%;
+    font-size: 12px;
+    border-radius: 10px;
     display: inline-flex;
     align-items: center;
-    margin-right: 20px;
-    margin-left: 100px;
-    background-color: white;
+    border: 3px solid #0f5779;
+    margin-right:150px;
+    background-color: #e8f9ff;
+
 }
 header .serchdiv img{
     margin-left: 20px;
@@ -57,6 +65,7 @@ header .serchdiv input{
     font-family: 'Times New Roman', Times, serif;
     padding-left: 10px;
     border: none;
+    background-color: #e8f9ff;
     outline: none;
 }
 header .serchdiv input::placeholder{
@@ -70,26 +79,33 @@ header input{
     border-radius: 50px;
     width: 80%;
     height: 80%;
-}
+}   
 /* section tag stayling start */
+
 section .sec1{
-    height: 505px;
+    height: 90dvh;
     width: 100%;
     background-color: #C4D9FF;
     /* display: inline-flexs; */
 }
+
 section .manu{
-    height: 505px;
-    width: 27%;
-    display: inline-flex;
+    width: 20vw;
     flex-wrap: wrap;
-    /* background-color: #A6CDC6; */
+    position: fixed;
+    height: 95dvh;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    display: inline-flex;
 }
+
 
 section .manu .manu1{
     height:120px;
-    width: 90%;
-    font-size: 1.3em;
+    width: 70%;
+    font-size: 1em;
+    border:3px solid #5597c2;
     margin: 22px 20px;
     padding: 0px 10px;
     border-radius:20px;
@@ -100,13 +116,15 @@ section .manu .manu1{
     justify-content: center;
     text-transform: capitalize; 
 }
+
 .task{
+    position: fixed;
+    right: 50px;
     display: inline-flex;
     width: 72.5%;
     height: 500px;
     flex-wrap: wrap;
     justify-content: center;
-    position: absolute;
 }
 .main1{
     width: 95%; 
@@ -114,7 +132,7 @@ section .manu .manu1{
     margin-top: 39px;
     overflow-x: hidden;
     overflow-y: scroll;
-    /* border: 2px solid black; */
+    border: 2px solid #5597c2;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -122,22 +140,26 @@ section .manu .manu1{
 }
 .main2{
     height: 50px;
-    width: 157dvh;
+    width: 100%;
     /* border: 2px solid black; */
     display:inline-flex;
-    align-items: center;
-    justify-content: center;    
+    align-items: center;    
+    justify-content: space-between; 
+    margin-top: 40px;
 }
 .main2 input{
     border-radius: 15%;
     border: none;
-    border-radius: 30px;
+    border-radius: 10px;
     padding-left: 20px;
     font-size: 1.2em;
     font-family: 'Times New Roman', Times, serif;
-    width: 85%;
-    height: 85%;
+    background-color: #5597c2;
+    color: white;
+    width: 94%;
+    height: 100%;
     font-size: 1.2em;
+    margin-right: 20px;
 }
 .main2 input::placeholder{
     color: black;
@@ -147,18 +169,19 @@ section .manu .manu1{
     text-transform: capitalize;
 }
 .main2 button img{
-    width: 40px;
-    height: 40px;
-    background-color: aliceblue;
-    border-radius: 30px;
+    width: 45px;
+    height: 43px;
 }
 .main2 #added{
     background-color: transparent;
-    border-radius: 30px;
-    margin-left: 10px;
-    margin-top: 5px;
-    border: none;
+    border-radius: 10px;
+    margin:0px 5px 0 0;
+    border: 3px solid #5597c2;
     background-color: white;
+}
+
+.main2 #added:hover {
+    border: 3px solid #36abf9;
 }
 
 /* styling of li tag that created by js. */
@@ -177,7 +200,7 @@ section .manu .manu1{
 .btnsize{
     font-size: 20px;
     font-weight: 150;
-    height: 40px;
+    height: 45px;
     width: auto;
     border: none;
     background-color: white;
@@ -200,3 +223,5 @@ section .manu .manu1{
     font-family: 'Times New Roman', Times, serif;
     flex-grow: 1;
 }
+
+/* responsive desain code  */

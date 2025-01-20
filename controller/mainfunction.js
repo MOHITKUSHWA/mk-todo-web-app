@@ -80,13 +80,13 @@ const mainfunction = (e) => {
             localStorage.setItem('task', JSON.stringify(totaltask));
 
             let imptask = totaltask.filter(task => task.import === true);
-            impTasktext.innerText = `Total important task is ${imptask.length}`;
+            impTasktext.innerText = ` important task  ${imptask.length}`;
         } else {
             taskElement.classList.remove("important");
             update.import = false;
             localStorage.setItem('task', JSON.stringify(totaltask));
             let imptask = totaltask.filter(task => task.import === true);
-            impTasktext.innerText = `Total important task is ${imptask.length}`;
+            impTasktext.innerText = ` important task ${imptask.length}`;
         }
     } else if (clicktask.innerText === 'Complate') {
         if (maincomplatetask === false) {
@@ -96,20 +96,20 @@ const mainfunction = (e) => {
             taskElement.style.textDecoration = "line-through";
 
             let complate = totaltask.filter(task => task.complatetask === true);
-            complaTeTask.innerText = `Completed task is ${complate.length}`;
+            complaTeTask.innerText = `Completed task ${complate.length}`;
 
             let uncomlatetask = totaltask.filter(task => task.complatetask === false);
-            panding.innerText = `Pending task is ${uncomlatetask.length}`;
+            panding.innerText = `Pending task ${uncomlatetask.length}`;
         } else {
             update.complatetask = false;
             localStorage.setItem('task', JSON.stringify(totaltask));
 
             taskElement.style.textDecoration = "none";
             let complate = totaltask.filter(task => task.complatetask === true);
-            complaTeTask.innerText = `Completed task is ${complate.length}`;
+            complaTeTask.innerText = `Completed task ${complate.length}`;
 
             let uncomlatetask = totaltask.filter(task => task.complatetask === false);
-            panding.innerText = `Pending task is ${uncomlatetask.length}`;
+            panding.innerText = `Pending task ${uncomlatetask.length}`;
         }
     } else if (clicktask.innerText === 'Delete') {
         if (maincomplatetask === false && imptask === false) {
@@ -123,16 +123,13 @@ const mainfunction = (e) => {
                 }
 
                 let uncomlatetask = totaltask.filter(task => task.complatetask === false);
-                panding.innerText = `Pending task is ${uncomlatetask.length}`;
+                panding.innerText = `Pending task ${uncomlatetask.length}`;
             }
         } else {
             alert('Your task is already completed');
             return false;
         }
-    } else {
-        alert('Your click is wrong');
-        return false;
-    }
+    } 
 }
 
 export { mainfunction };

@@ -55,13 +55,13 @@ document.addEventListener('DOMContentLoaded',()=>{
         }
         
         let uncomlatetask = totaltask.filter(task => task.complatetask === false);
-        panding.innerText = `Panding task is ${uncomlatetask.length}`;
+        panding.innerText = `Panding task ${uncomlatetask.length}`;
 
         let complate = totaltask.filter(task => task.complatetask === true);
-        complaTeTask.innerText = `complated task is ${complate.length}`;
+        complaTeTask.innerText = `complated task  ${complate.length}`;
 
         let imptask = totaltask.filter(task=>task.import === true);
-        impTasktext.innerText = `total important task is ${imptask.length}`;
+        impTasktext.innerText = `total important task ${imptask.length}`;
 
     });
 })
