@@ -43,23 +43,6 @@ header{
     font-family: "Exo 2", serif;
 }
 
-.btn_one{
-    color: white;
-    font-size: 40px;
-    font-weight: 700;
-    position: absolute ;
-    top: 60px;
-    left: 5px;
-    line-height: 60px;
-    cursor: pointer;
-    display: flex;
-    opacity: 0;
-}
-#check{
-    position: absolute;
-    opacity: 0;
-    display: flex;
-}
 header .serchdiv{
     width: 60%;
     height: 80%;
@@ -203,21 +186,22 @@ section .manu .manu1{
 /* styling of li tag that created by js. */
 
 .pera{
+    padding-top: 10px;
     padding-left: 20px;
     border-radius: 20px;
     margin: 10px 0px 20px 20px;
     width:auto;
     height: auto;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    font-size: 1.5em;
     background-color: white;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center ;
 }
 .btnsize{
     text-decoration: underline;
-    font-size: 20px;
-    font-weight: 150;
+    font-size: 1.3em;
+    font-weight: 300;
     height: 45px;
     width: auto;
     border: none;
@@ -232,13 +216,16 @@ section .manu .manu1{
     font-weight: bold;
 }
 .p{
-    height: 50px;
+    height: auto;
     width: 100%;
-    display: flex;
+    display: block;
     align-items: center;
     font-size: 1em;
     font-family: 'Times New Roman', Times, serif;
     flex-grow: 1;
+    flex: 1;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 
 /* responsive desain code  */
@@ -256,7 +243,7 @@ section .manu .manu1{
         margin-top: 1.5%;
     }
     header .serchdiv{
-        height:40%;
+        height:30%;
         width: 100%;
         margin-left:40px;
         margin-right: 10px;
@@ -268,6 +255,7 @@ section .manu .manu1{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column-reverse;
+        align-items: center;
         /* display: inline-flexs; */
     }
     section .manu{
@@ -281,19 +269,17 @@ section .manu .manu1{
     }
     
     .task{        
-        display: inline-flex;
-        width: 100%;
+        width: 90%;
         height: 100dvh;
+        display: inline-flex;
         flex-wrap: wrap;
         border-bottom: 2px solid #e8f9ff;
     }
-
-    .main1{
-        margin-top: 5%;
+    .pera{
+        display: block;
     }
-    .main2{
-        margin:20px;
+    .btnsize{
+        font-size: 0.9em;
     }
-    
     
 }
