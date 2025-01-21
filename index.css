@@ -270,7 +270,7 @@ section .manu .manu1{
     
     .task{        
         width: 90%;
-        height: 90dvh;
+        height: 80dvh;
         display: inline-flex;
         flex-wrap: wrap;
         border-bottom: 2px solid #e8f9ff;
