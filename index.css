@@ -220,7 +220,7 @@ section .manu .manu1{
     width: 100%;
     display: block;
     align-items: center;
-    font-size: 1em;
+    font-size: 1.3em;
     font-family: 'Times New Roman', Times, serif;
     flex-grow: 1;
     flex: 1;
