@@ -107,6 +107,23 @@ srachBtn.addEventListener('keyup',()=>{
         taskpera.setAttribute('data-id', element.id);
     
         taskpera.innerText = element.task;
+
+        if (element.import === true) {
+            taskpera.classList.add("important");
+        }
+
+        if(element.complatetask){
+            taskpera.style.textDecoration = "line-through";
+        }
+        
+        let uncomlatetask = totaltask.filter(task => task.complatetask === false);
+        panding.innerText = `Panding task ${uncomlatetask.length}`;
+
+        let complate = totaltask.filter(task => task.complatetask === true);
+        complaTeTask.innerText = `complated task  ${complate.length}`;
+
+        let imptask = totaltask.filter(task=>task.import === true);
+        impTasktext.innerText = `total important task ${imptask.length}`;
     })
 
 })
