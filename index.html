@@ -1,61 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mk Todo</title>
     <!-- css file link -->
-    <link rel="stylesheet" href="index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Jersey+15&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Jersey+15&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <!-- header -->
     <header class="header">
-        <div class="logo">
-            <img src="/img/logo.png" alt="logo">
-            <h1>mk to-do</h1>
-        </div>
-        <div class="serchdiv">
-            <img src="/img/search.png" id="staskbtn" alt="searchicone">
-            <input type="text" name="task" id="search" placeholder="serch your task" >
-        </div>
+      <div class="logo">
+        <img src="/img/logo.png" alt="logo" />
+        <h1>mk to-do</h1>
+      </div>
+      <div class="serchdiv">
+        <img src="/img/search.png" id="staskbtn" alt="searchicone" />
+        <input
+          type="text"
+          name="task"
+          id="search"
+          placeholder="serch your task"
+        />
+      </div>
     </header>
     <!-- main section in tab -->
     <section>
-        <div class="sec1">
-            <div class="manu">
-                <div class="manu1">
-                    <h2 class="imptotal">important task<br> 0</h2>
-                </div>
-                <div class="manu1">
-                    <h2 class="complated">complated task<br> 0</h2>
-                </div>
-                <div class="manu1">
-                    <h2 class="panding">panding task<br> 0</h2>
-                </div>
-            </div>
-
-            <!-- main section 2 -->
-            <div class="task">
-                <div class="main1"  >
-                    <ul id="detail">
-                        <!-- <li class="p"> mohit</li> -->
-                    </ul>
-                </div>
-                <div class="main2">
-                    <input type="text" id="addtext" placeholder="enter your task" required>
-                    <button type="submit" id="added"><img src="/img/add.png" alt="taskicone" srcset=""></button>
-                </div>
-            </div>
+      <div class="sec1">
+        <div class="manu">
+          <div class="manu1">
+            <h2 class="imptotal">
+              important task<br />
+              0
+            </h2>
+          </div>
+          <div class="manu1">
+            <h2 class="complated">
+              complated task<br />
+              0
+            </h2>
+          </div>
+          <div class="manu1">
+            <h2 class="panding">
+              panding task<br />
+              0
+            </h2>
+          </div>
         </div>
+
+        <!-- main section 2 -->
+        <div class="task">
+          <div class="main1">
+            <ul id="detail">
+              <!-- <li class="p"> mohit</li> -->
+            </ul>
+          </div>
+          <div class="main2">
+            <input
+              type="text"
+              id="addtext"
+              placeholder="enter your task"
+              required
+            />
+            <button type="submit" id="added">
+              <img src="/img/add.png" alt="taskicone" srcset="" />
+            </button>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- javascript link -->
     <script type="module" src="./controller/index.js"></script>
-    
-</body>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-L81HE3JB5Y"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
+      gtag("config", "G-L81HE3JB5Y");
+    </script>
+  </body>
 </html>
